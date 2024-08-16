@@ -12,7 +12,7 @@ import com.farmacy.country.domain.service.CountryService;
 public class CountryRepository implements CountryService {
     private Connection connection;
 
-    public CountryRepository() {
+    public CountryRepository(Connection connection2) {
         try {
             Properties props = new Properties();
             props.load(getClass().getClassLoader().getResourceAsStream("db.properties"));
@@ -116,7 +116,6 @@ public class CountryRepository implements CountryService {
         }
     }
 
-    // Método para cerrar la conexión
     private void closeConnection() {
         if (connection != null) {
             try {

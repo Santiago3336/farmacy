@@ -62,8 +62,8 @@ CREATE TABLE customer (
     codecitycustomer VARCHAR(5),
     emailcustomer VARCHAR(100),
     brrdate DATE,
-    latitud FLOAT(8),
-    longitud FLOAT(8),
+    latitude FLOAT(8),
+    longitude FLOAT(8),
     CONSTRAINT pk_idcustomer PRIMARY KEY (idcustomer)
 );
 
